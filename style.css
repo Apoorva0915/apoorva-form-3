@@ -1,68 +1,116 @@
-.text-red{
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+h2{
+  
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 2px;
     color:#C8975F;
 }
+
+h3{
+    text-align: left;
+    margin: 14px 22px;
+    font-size: 20px;
+    font-family: 'Castoro Titling', cursive;
+    color: black;
+
+}
+
+h4{
+
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Castoro Titling', cursive;
+    letter-spacing: 0.01px;
+    color:black;
+}
+
+form{
+    padding-top: 8px;
+}
+body {
+    background:url(markus-spiske-IqVqS1V1ch8-unsplash-copy-copy.jpg) no-repeat center center/cover;
+
+  }
 .container{
     display: flex;
+    height: 100vh;
     justify-content: center;
-    padding-top: 30px;
-}
-h1{
-    text-align: center;
-    font-size: 60px;
-    text-shadow: 3px 1px 2px black;
-}
-h3{
-    font-size: 26px;
-}
-    
- form{
-    width: 500px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 2px;
-    border: 2px solid black;
-    box-shadow: 6px 6px 10px black;
 
- }
+}
+  
+.box{
  
- body{
-    background: url(markus-spiske-IqVqS1V1ch8-unsplash-copy-copy.jpg) no-repeat center center /cover;
+    text-align: center; 
+
+    margin-top: 20px;
+    box-shadow: 1px 1px 3px 3px black;
+    border-radius: 20PX;
+    border: 1px solid black;
+
+
 }
 
-.button{
-    background-color: grey ;
-    color: white;
-    border-radius: 18px;
-    padding: 8px 20px;
-    margin:8px 0px;
-    box-shadow: 2px 5px 8px black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-
-    
-}
-.button:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    color: black;
-    
-}
 .input-container{
-    background-color: rgb(203, 170, 8);
-    height:20px;
-    width: 200px;
-    padding-left: 10px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border: 1.5px solid black;
-    box-shadow: 2px 3px 4px black;
-}
- label{
-    font-size: 17px;
- }
-.rating{
-    font-size: 22px;
+    margin: 8px 20px;
+    padding: 3px 45px ;
+    font-size: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color:rgb(203, 170, 8);
+    border: 1.7px solid black;
+    box-shadow: 1.6px 1.6px 1.6px black ;
+    
+    
+
 }
 
+.contact{
+    text-align: left;
+    margin: 8px 6px;
+}
+
+.Rating{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -46px;
+    margin-left: 270px;
+    font-weight: bold;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 15px;
+    padding-left: 15px;
+    color: black;
+}
+
+.submit{
+   
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0px 8px; 
+    padding-top: 5px;
+    border-radius: 35px;
+    font-size: 18px;
+    font-family: 'Castoro Titling', cursive;
+    letter-spacing: 0.2px;
+    
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color:rgb(203, 170, 8);
+
+}
+::placeholder{
+    color: black;
+}
+
+.res{
+    display: flex;
+    flex-wrap: wrap;
+}
 
