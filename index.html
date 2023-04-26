@@ -1,85 +1,74 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Apoorva Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
+    <title>Survey Form</title>
 </head>
-
 <body>
     <div class="container">
-        <form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
-            <h1 class="text-red">Survey Form</h1>
-            <b>
-                <h3>Name:</h3>
-                <label for="First_name">First Name : </label>
-                <input required type="text" name="first_name" id="first_name" class="input-container">
-                <br>
-                <br>
-                <label for="Last_name">Last name : </label>
-                <input required type="text" name="last_name" id="last_name" class="input-container">
-                <h3>Address:</h3>
-                <label for="Street">Street : </label>
-                <input required type="text" name="street_address" id="street_address" class="input-container">
-                <br>
-                <br>
-                <label for="City">City : </label>
-                <input required type="text" name="city" id="city" class="input-container">
-                <br>
-                <br>
-                <label for="State">State : </label>
-                <input required type="text" name="state" id="state" class="input-container">
-                <br>
-                <br>
-                <label for="Pincode">Pincode : </label>
-                <input required type="text" name="pincode" id="pincode" class="input-container" pattern="[0-9]{6}">
-                <br>
-                <br>
-                <h3>Contact:</h3>
-                <label for="Contact">Contact no. : </label>
-                <input required type="tel" name="contact_number" id="contact_number" class="input-container" pattern="[0-9]{10}">
-                <br>
-                <br>
-                <h3>Rating:</h3>
-                <label for="Quality" class="rating">Quality Of Products Recieved:</label>
-                <br>
-                <br>
-                <input type="radio" name="quality_of_products_received_rating" value="Good" id="Good">
-                <label for="Good">Good</label>
-                <input type="radio" name="quality_of_products_received_rating" value="Excellent" id="Excellent">
-                <label for="Excellent">Excellent</label>
-                <input type="radio" name="quality_of_products_received_rating" value="Bad" id="Bad">
-                <label for="Bad">Bad</label>
-                <br>
-                <br>
-                <label for="Money" class="rating">Value For Money:</label>
-                <br>
-                <br>
-                <input type="radio" name="value_for_money_rating" value="Good" id="Good">
-                <label for="Good">Good</label>
-                <input type="radio" name="value_for_money_rating" value="Excellent" id="Excellent">
-                <label for="Excellent">Excellent</label>
-                <input type="radio" name="value_for_money_rating" value="Bad" id="Bad">
-                <label for="Bad">Bad</label>
-                <br>
-                <br>
-                <label for="Delivery" class="rating">Delivery:</label>
-                <br>
-                <br>
-                <input type="radio" name="delivery_rating" value="Good" id="Good">
-                <label for="Good">Good</label>
-                <input type="radio" name="delivery_rating" value="Excellent" id="Excellent">
-                <label for="Excellent">Excellent</label>
-                <input type="radio" name="delivery_rating" value="Bad" id="Bad">
-                <label for="Bad">Bad</label>
-            </b>
-            <br>
-            <input class="button" type="Submit" value="Submit">
-        </form>
+        <div class="box">
+           
+                <form action="https://enw7u145b8im9.x.pipedream.net/" method="POST">
+                    <h2>Survey Form</h2>
+                    <h3>Name:</h3>
+                    <div class="res" >
+                        <input required type="text" placeholder="First Name" name="first_name" class="input-container">
+                        <input required type="text" placeholder="Last Name" name="last_name" class="input-container">
+                    </div>
+
+                     <h3>Address:</h3>
+                     
+                    <div class="res">
+                        <input required type="text" placeholder="Street" name="street_address" class="input-container">
+                        <input required type="text" placeholder="City" name="city" class="input-container">
+                    </div>
+
+                    <div class="res">
+                        <input required type="text" placeholder="Pincode" pattern="[0-9]{6}" title="Only numbers are allowed" name="pincode" class="input-container">
+                        <input required type="text" placeholder="State" name="state" class="input-container">
+                    </div>
+                   
+
+                    <h3>Contact Details:</h3>
+
+                    <div class="contact">
+                        <input required type="text" placeholder="Contact Number" pattern="[0-9]{10}" title="Only numbers are allowed" name="contact_number" class="input-container">
+                    </div>
+
+           
+                        <h4>Quality Of Product Received :</h4>
+                       <div class="Rating"><input required type="radio" name="quality_of_products_received_rating" value="Excellent">Excellent
+                        <input required type="radio" name="quality_of_products_received_rating" value="Good">Good
+                        <input required type="radio" name="quality_of_products_received_rating" value="Bad">Bad
+                    </div> 
+
+             
+                        <h4>Delivery :</h4>
+                       <div class="Rating">
+                        <input required type="radio" name="delivery_rating" value="Excellent">Excellent
+                        <input required type="radio" name="delivery_rating" value="Good">Good
+                        <input required type="radio" name="delivery_rating" value="Bad">Bad
+                    </div>
+
+                        <h4>Value for Money :</h4>
+                       <div class="Rating">
+                        <input required type="radio" name="value_for_money_rating" value="Excellent">Excellent
+                        <input required type="radio" name="value_for_money_rating" value="Good">Good
+                        <input required type="radio" name="value_for_money_rating" value="Bad">Bad
+                    </div>
+                     <br>
+                    
+                    <div>
+                        <input class="submit" type="submit" name="Submit">
+                    </div>
+
+                        
+                    
+                </form>
+        </div>
     </div>
-
 </body>
-
 </html>
